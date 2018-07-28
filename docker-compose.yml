@@ -1,0 +1,12 @@
+version: "2"
+services:
+  web:
+    # replace username/repo:tag with your name and image details
+    image: imagen_2:latest
+    container_name: desarrollo-test
+    volumes:
+      - ./develop/app:/app
+      - ./develop/app.py:/app.py
+    ports:
+      - "4000:80"
+    
